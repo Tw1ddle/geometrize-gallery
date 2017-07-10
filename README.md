@@ -3,7 +3,7 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/Tw1ddle/geometrize-gallery/blob/master/LICENSE)
 [![Travis Gallery Build Status](https://img.shields.io/travis/Tw1ddle/geometrize-gallery.svg?style=flat-square)](https://travis-ci.org/Tw1ddle/geometrize-gallery)
 
-Haxe code that assembles an online showcase of geometrized media. View the gallery [here](gallery.geometrize.co.uk).
+Haxe code that assembles an online showcase of geometrized media. View the gallery [here](http://gallery.geometrize.co.uk).
 
 Part of [Geometrize](https://github.com/Tw1ddle/geometrize-lib), a tool for recreating images with geometric primitives.
 
