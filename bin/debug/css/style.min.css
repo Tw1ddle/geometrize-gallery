@@ -10,6 +10,6 @@ html{user-select:none;-moz-user-select:none;-khtml-user-select:none;-ms-user-sel
 li{user-select:text;-moz-user-select:text;-khtml-user-select:text;-ms-user-select:text;-webkit-user-select:text;-o-user-select:text;}
 body{text-align:center;background-color:#ffffff;}
 a:hover{color:#555555;}
-.logo{margin:15px;}
-.stitched{padding:20px;margin:10px;background:#ffffff;color:#000000;font-size:21px;font-weight:bold;line-height:1.3em;border:2px dashed #aaa;border-radius:10px;box-shadow:0 0 0 4px #ffffff,2px 1px 6px 4px rgba(10,10,0,0.5);font-weight:normal;display:inline-block;}
-.container{display:inline-block;margin:10px;max-width:90vw;}
+.stitched{padding:20px 20px 0px 20px;background:#ffffff;color:#000000;border:2px dashed #aaa;border-radius:10px;box-shadow:0 0 0 4px #ffffff,2px 1px 6px 4px rgba(10,10,0,0.5);display:inline-block;}
+.container{display:inline-block;margin:10px;min-width:80vw;height:auto;}
+#geometrizelogo{margin:15px;}

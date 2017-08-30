@@ -76,10 +76,9 @@ a:hover {
 }
 
 .stitched {
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     background: #ffffff;
     color: #000000;
-    border: 2px dashed #aaa;
     border-radius: 10px;
     box-shadow: 0 0 0 4px #ffffff, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
     display: inline-block;
@@ -88,8 +87,7 @@ a:hover {
 .container {
     display: inline-block;
     margin: 10px;
-    min-width: 80vw;
-    height:auto;
+    max-width: 61vw;
 }
 
 #geometrizelogo {
