@@ -1,5 +1,5 @@
 <?xml version="1.0" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="533" height="800">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny" width="533" height="800" viewBox="0 0 533 800">
 <rect id="background" x="0" y="0" width="533" height="800" fill="rgb(61,60,51)" fill-opacity="1"/>
 <circle cx="356" cy="611" r="155" id="0" fill="rgb(138,114,71)" fill-opacity="0.501961" />
 <circle cx="319" cy="298" r="73" id="1" fill="rgb(181,128,106)" fill-opacity="0.501961" />
