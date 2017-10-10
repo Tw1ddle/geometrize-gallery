@@ -40,20 +40,20 @@ class Main {
 	
 	// The items to show in the gallery (note could auto-generate this with a macro)
 	var galleryItems:Array<GalleryItem> = [
-		new GalleryItem("assets/images/borrowdale_autumn.png", "assets/images/geometrized_borrowdale_autumn.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/resting_shoes.png", "assets/images/geometrized_resting_shoes.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/ridge.png", "assets/images/geometrized_ridge.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/man_and_lake.png", "assets/images/geometrized_man_and_lake.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/sunset.png", "assets/images/geometrized_sunset.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/man.png", "assets/images/geometrized_man.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/rose.png", "assets/images/geometrized_rose.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/lake_with_pier.png", "assets/images/geometrized_lake_with_pier.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/skyscrapers.png", "assets/images/geometrized_skyscrapers.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/lake.png", "assets/images/geometrized_lake.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/flower.png", "assets/images/geometrized_flower.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/mountain.png", "assets/images/geometrized_mountain.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/lake_at_night.png", "assets/images/geometrized_lake_at_night.png", "<i>300 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/rolling_hills.png", "assets/images/geometrized_rolling_hills.png", "<i>300 Rotated Ellipses</i>")
+		new GalleryItem("assets/images/borrowdale_autumn.png", "assets/images/geometrized_borrowdale_autumn.png", "<i>500 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/resting_shoes.png", "assets/images/geometrized_resting_shoes.png", "<i>350 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/ridge.png", "assets/images/geometrized_ridge.png", "<i>430 Circles</i>"),
+		new GalleryItem("assets/images/man_and_lake.png", "assets/images/geometrized_man_and_lake.png", "<i>350 Circles</i>"),
+		new GalleryItem("assets/images/sunset.png", "assets/images/geometrized_sunset.png", "<i>350 Triangles</i>"),
+		new GalleryItem("assets/images/man.png", "assets/images/geometrized_man.png", "<i>400 Rotated Rectangles</i>"),
+		new GalleryItem("assets/images/rose.png", "assets/images/geometrized_rose.png", "<i>250 Triangles</i>"),
+		new GalleryItem("assets/images/lake_with_pier.png", "assets/images/geometrized_lake_with_pier.png", "<i>430 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/skyscrapers.png", "assets/images/geometrized_skyscrapers.png", "<i>470 Triangles</i>"),
+		new GalleryItem("assets/images/lake.png", "assets/images/geometrized_lake.png", "<i>300 Triangles</i>"),
+		new GalleryItem("assets/images/flower.png", "assets/images/geometrized_flower.png", "<i>315 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/mountain.png", "assets/images/geometrized_mountain.png", "<i>350 Circles</i>"),
+		new GalleryItem("assets/images/rolling_hills.png", "assets/images/geometrized_rolling_hills.png", "<i>470 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/lake_at_night.png", "assets/images/geometrized_lake_at_night.png", "<i>440 Rotated Ellipses</i>")
 	];
 	
 	// All the required references to the HTML page elements
