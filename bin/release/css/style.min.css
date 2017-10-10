@@ -48,7 +48,7 @@ p a {
     text-decoration: none;
 }
 
-html { 
+html {
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -81,15 +81,15 @@ a:hover {
     color: #000000;
     border-radius: 10px;
     box-shadow: 0 0 0 4px #ffffff, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-    display: inline-block;
+
 }
 
 .container {
-    display: inline-block;
-    margin: 10px;
     max-width: 61vw;
+    width: 61vw;
+    margin: 24px auto;
 }
 
 #geometrizelogo {
     margin: 15px;
-}}
+}
