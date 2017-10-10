@@ -40,12 +40,20 @@ class Main {
 	
 	// The items to show in the gallery (note could auto-generate this with a macro)
 	var galleryItems:Array<GalleryItem> = [
-		new GalleryItem("assets/images/stanczyk.jpg", "assets/images/stanczyk.svg", "<i>Stańczyk, Jan Matejko, oil on canvas, 1862. Geometrized into 100 ellipses and rectangles. With such a low number of shapes, most detail is lost but abstract forms are preserved.</i>"),
-		new GalleryItem("assets/images/peacock.jpg", "assets/images/peacock.svg", "<i>Royal Peacock, Elena Walker, photograph, 2013. Geometrized into 350 triangles. The intricate patterns do not geometrize easily, but a stylized form is reproduced quickly.</i>"),
-		new GalleryItem("assets/images/the_desperate_man.jpg", "assets/images/the_desperate_man.svg", "<i>The Desperate Man, Gustave Courbet, oil on canvas, 1843. Geometrized into 1000 shapes of various types. Faces geometrize quite well. The Geometrize app includes a mode that lets users focus on areas of interest, which was not used here.</i>"),
-		new GalleryItem("assets/images/midsummer_eve.jpg", "assets/images/midsummer_eve.svg", "<i>Midsummer Eve, Edward Robert Hughes, oil on canvas, 1908. Geometrized into 1000 shapes of various types. Try squinting.</i>"),
-		new GalleryItem("assets/images/cinderella.jpg", "assets/images/cinderella.svg", "<i>Cinderella, John Everett Millais, oil on canvas, 1870. Geometrized into 1000 shapes of various types, mostly circles.</i>"),
-		new GalleryItem("assets/images/circe_invidiosa.jpg", "assets/images/circe_invidiosa.svg", "<i>Circe Invidiosa, John William Waterhouse, oil on canvas, 1892. Geometrized into 1000 ellipses, rectangles and triangles.</i>")
+		new GalleryItem("assets/images/borrowdale_autumn.png", "assets/images/geometrized_borrowdale_autumn.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/resting_shoes.png", "assets/images/geometrized_resting_shoes.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/ridge.png", "assets/images/geometrized_ridge.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/man_and_lake.png", "assets/images/geometrized_man_and_lake.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/sunset.png", "assets/images/geometrized_sunset.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/man.png", "assets/images/geometrized_man.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/rose.png", "assets/images/geometrized_rose.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/lake_with_pier.png", "assets/images/geometrized_lake_with_pier.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/skyscrapers.png", "assets/images/geometrized_skyscrapers.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/lake.png", "assets/images/geometrized_lake.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/flower.png", "assets/images/geometrized_flower.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/mountain.png", "assets/images/geometrized_mountain.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/lake_at_night.png", "assets/images/geometrized_lake_at_night.png", "<i>300 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/rolling_hills.png", "assets/images/geometrized_rolling_hills.png", "<i>300 Rotated Ellipses</i>")
 	];
 	
 	// All the required references to the HTML page elements
@@ -64,7 +72,7 @@ class Main {
 		Browser.window.onload = onWindowLoaded;
 	}
 	
-	private inline function init():Void {		
+	private inline function init():Void {
 		for (item in galleryItems) {
 			addGalleryItem(item);
 		}
