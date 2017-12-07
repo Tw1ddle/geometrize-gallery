@@ -17,8 +17,8 @@ branches:
 
 # Build the project
 script:
-  - haxe geometrize-gallery.hxml debug.hxml
-  - haxe geometrize-gallery.hxml release.hxml
+  - haxe geometrize-gallery.hxml
+  - haxe geometrize-gallery.hxml
 
 # Deploy the generated site using Travis builtin GitHub Pages support
 deploy:
