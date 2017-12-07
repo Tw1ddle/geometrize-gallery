@@ -1,16 +1,16 @@
 package;
 
 import js.Browser;
-import js.Cocoen;
+import js.html.AnchorElement;
 import js.html.DivElement;
 import js.html.ImageElement;
 import js.html.ParagraphElement;
 
 // Automatic HTML code completion, you need to point these to your debug/release HTML
 #if debug
-@:build(CodeCompletion.buildLocalFile("bin/debug/index.html"))
+@:build(CodeCompletion.buildLocalFile("bin/index.html"))
 #else
-@:build(CodeCompletion.buildLocalFile("bin/release/index.html"))
+@:build(CodeCompletion.buildLocalFile("bin/index.html"))
 #end
 //@:build(CodeCompletion.buildUrl("http://gallery.geometrize.co.uk/"))
 class ID {}
@@ -28,32 +28,41 @@ class GalleryItem {
 	
 	public var beforeImagePath(default,null):String;
 	public var afterImagePath(default,null):String;
-	public var descriptionText(default,null):String;
+	public var descriptionText(default, null):String;
+	
+	public var link(get, never):String;
+	private function get_link():String {
+		return Main.WEBSITE_URL + afterImagePath;
+	}
 }
 
 /**
- * A one-page landing site for Geometrize, a tool for geometrizing images into geometric primitives.
+ * A one-page landing gallery page for Geometrize, a tool for geometrizing images into geometric primitives.
  * @author Sam Twidale (http://www.geometrize.co.uk/)
  */
 class Main {
-	private static inline var WEBSITE_URL:String = "http://gallery.geometrize.co.uk/"; // Hosted site URL
+	public static inline var WEBSITE_URL:String = "http://gallery.geometrize.co.uk/"; // Hosted site URL
 	
 	// The items to show in the gallery (note could auto-generate this with a macro)
 	var galleryItems:Array<GalleryItem> = [
-		new GalleryItem("assets/images/borrowdale_autumn.png", "assets/images/geometrized_borrowdale_autumn.png", "<i>500 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/resting_shoes.png", "assets/images/geometrized_resting_shoes.png", "<i>350 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/ridge.png", "assets/images/geometrized_ridge.png", "<i>430 Circles</i>"),
-		new GalleryItem("assets/images/man_and_lake.png", "assets/images/geometrized_man_and_lake.png", "<i>350 Circles</i>"),
-		new GalleryItem("assets/images/sunset.png", "assets/images/geometrized_sunset.png", "<i>350 Triangles</i>"),
-		new GalleryItem("assets/images/man.png", "assets/images/geometrized_man.png", "<i>400 Rotated Rectangles</i>"),
-		new GalleryItem("assets/images/rose.png", "assets/images/geometrized_rose.png", "<i>250 Triangles</i>"),
-		new GalleryItem("assets/images/lake_with_pier.png", "assets/images/geometrized_lake_with_pier.png", "<i>430 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/skyscrapers.png", "assets/images/geometrized_skyscrapers.png", "<i>470 Triangles</i>"),
-		new GalleryItem("assets/images/lake.png", "assets/images/geometrized_lake.png", "<i>300 Triangles</i>"),
-		new GalleryItem("assets/images/flower.png", "assets/images/geometrized_flower.png", "<i>315 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/mountain.png", "assets/images/geometrized_mountain.png", "<i>350 Circles</i>"),
-		new GalleryItem("assets/images/rolling_hills.png", "assets/images/geometrized_rolling_hills.png", "<i>470 Rotated Ellipses</i>"),
-		new GalleryItem("assets/images/lake_at_night.png", "assets/images/geometrized_lake_at_night.png", "<i>440 Rotated Ellipses</i>")
+		new GalleryItem("assets/images/resting_shoes.png", "assets/images/resting_shoes_geometrized.png", "<i>350 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/ridge.png", "assets/images/ridge_geometrized.png", "<i>430 Circles</i>"),
+		new GalleryItem("assets/images/man.png", "assets/images/man_geometrized.png", "<i>400 Rotated Rectangles</i>"),
+		new GalleryItem("assets/images/wolf.png", "assets/images/wolf_geometrized.png", "<i>210 Triangles</i>"),
+		new GalleryItem("assets/images/man_and_lake.png", "assets/images/man_and_lake_geometrized.png", "<i>350 Circles</i>"),
+		new GalleryItem("assets/images/rose.png", "assets/images/rose_geometrized.png", "<i>250 Triangles</i>"),
+		new GalleryItem("assets/images/building.png", "assets/images/building_geometrized.png", "<i>460 Circles</i>"),
+		new GalleryItem("assets/images/flowers.png", "assets/images/flowers_geometrized.png", "<i>200 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/lake_with_pier.png", "assets/images/lake_with_pier_geometrized.png", "<i>430 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/skyscrapers.png", "assets/images/skyscrapers_geometrized.png", "<i>470 Triangles</i>"),
+		new GalleryItem("assets/images/train.png", "assets/images/train_geometrized.png", "<i>260 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/lake.png", "assets/images/lake_geometrized.png", "<i>300 Triangles</i>"),
+		new GalleryItem("assets/images/flower.png", "assets/images/flower_geometrized.png", "<i>315 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/borrowdale_autumn.png", "assets/images/borrowdale_autumn_geometrized.png", "<i>500 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/mountain.png", "assets/images/mountain_geometrized.png", "<i>350 Circles</i>"),
+		new GalleryItem("assets/images/sunset.png", "assets/images/sunset_geometrized.png", "<i>350 Triangles</i>"),
+		new GalleryItem("assets/images/rolling_hills.png", "assets/images/rolling_hills_geometrized.png", "<i>470 Rotated Ellipses</i>"),
+		new GalleryItem("assets/images/tree_under_clouds.png", "assets/images/tree_under_clouds_geometrized.png", "<i>200 Ellipses</i>"),
 	];
 	
 	// All the required references to the HTML page elements
@@ -77,9 +86,9 @@ class Main {
 			addGalleryItem(item);
 		}
 		
-		var nodes = js.Browser.document.querySelectorAll('.cocoen');
+		var nodes = js.Browser.document.querySelectorAll('.twentytwenty');
 		for (node in nodes) {
-			new Cocoen(cast node);
+			new TwentyTwenty(cast node);
 		}
 	}
 	
@@ -87,15 +96,13 @@ class Main {
 		var container = js.Browser.document.createDivElement();
 		container.className = "container stitched";
 		
-		var cocoen = js.Browser.document.createDivElement();
-		cocoen.className = "cocoen";
+		var twentyTwenty = js.Browser.document.createDivElement();
+		twentyTwenty.className = "twentytwenty";
 		
-		container.appendChild(cocoen);
+		container.appendChild(twentyTwenty);
 		
-		var descriptionText = js.Browser.document.createParagraphElement();
-		descriptionText.innerHTML = item.descriptionText;
-		
-		container.appendChild(descriptionText);
+		var caption = js.Browser.document.createParagraphElement();
+		caption.innerHTML = item.descriptionText;
 		
 		var beforeImage = js.Browser.document.createImageElement();
 		beforeImage.src = item.beforeImagePath;
@@ -103,8 +110,16 @@ class Main {
 		var afterImage = js.Browser.document.createImageElement();
 		afterImage.src = item.afterImagePath;
 		
-		cocoen.appendChild(beforeImage);
-		cocoen.appendChild(afterImage);
+		twentyTwenty.appendChild(beforeImage);
+		twentyTwenty.appendChild(afterImage);
+		
+		var anchor = js.Browser.document.createAnchorElement();
+		anchor.href = item.link;
+		anchor.target = "_blank";
+			
+		anchor.appendChild(twentyTwenty);
+		container.appendChild(anchor);
+		container.appendChild(caption);
 	
 		galleryItemContainer.appendChild(container);
 		
