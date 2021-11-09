@@ -12,7 +12,7 @@ import js.html.ParagraphElement;
 #else
 @:build(CodeCompletion.buildLocalFile("bin/index.html"))
 #end
-//@:build(CodeCompletion.buildUrl("http://gallery.geometrize.co.uk/"))
+//@:build(CodeCompletion.buildUrl("https://gallery.geometrize.co.uk/"))
 class ID {}
 
 /**
@@ -38,7 +38,7 @@ class GalleryItem {
 
 /**
  * A one-page landing gallery page for Geometrize, a tool for geometrizing images into geometric primitives.
- * @author Sam Twidale (http://www.geometrize.co.uk/)
+ * @author Sam Twidale (https://www.geometrize.co.uk/)
  */
 class Main {
 	public static inline var WEBSITE_URL:String = "http://gallery.geometrize.co.uk/"; // Hosted site URL
